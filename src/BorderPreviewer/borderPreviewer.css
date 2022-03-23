@@ -1,0 +1,72 @@
+.container {
+  text-align: center;
+  background-color: inherit;
+}
+
+.code {
+  text-align: start;
+  font-size: 20px;
+  color: var(--ice-white);
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.header {
+  font-family: 'Patrick hand';
+  color: var(--orange);
+  font-size: 46px;
+}
+
+.group-title {
+  font-size: 25px;
+  color: var(--light-purple);
+}
+
+.border-input {
+  height: 40px;
+  width: 200px;
+  border-radius: 10px;
+}
+
+.left-side {
+  position: relative;
+  left: 0;
+}
+
+.right-side {
+  position: relative; 
+  right: 0;
+}
+
+.top-side {
+  position: relative;
+  bottom: 0;
+}
+
+.bottom-side {
+  position: relative;
+  top: 0;
+}
+
+.inputs-container {
+  bottom: 0;
+  position: relative;
+  height: 100%;
+}
+
+.p-10 {
+  padding: 10px;
+}
+
+.config-group {
+  display: flex;
+  margin: 15px;
+  gap: 10px;
+  max-width: 350px;
+  flex-wrap: wrap;
+  flex: auto;
+  flex-flow: column;
+  align-items: center;
+}
