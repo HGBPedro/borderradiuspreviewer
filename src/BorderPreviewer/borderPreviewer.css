@@ -3,6 +3,11 @@
   background-color: inherit;
 }
 
+.content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
 .code {
   text-align: start;
   font-size: 20px;
@@ -22,6 +27,7 @@ h2 {
 .group-title {
   font-size: 25px;
   color: var(--light-purple);
+  margin: 0.3rem auto;
 }
 
 .border-input {
@@ -30,34 +36,22 @@ h2 {
   border-radius: 10px;
 }
 
-.left-side {
-  position: relative;
-  left: 0;
-}
-
-.right-side {
-  position: relative; 
-  right: 0;
-}
-
-.top-side {
-  position: relative;
-  bottom: 0;
-}
-
-.bottom-side {
-  position: relative;
-  top: 0;
-}
-
 .inputs-container {
-  bottom: 0;
-  position: relative;
-  height: 100%;
+  display:flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 4rem;
 }
 
 .p-10 {
   padding: 10px;
+  width: 400px;
+  margin: auto 0;
+}
+
+.p-25 {
+  padding: 15px 25px;
+  margin: 0;
 }
 
 .config-group {
@@ -69,4 +63,13 @@ h2 {
   flex: auto;
   flex-flow: column;
   align-items: center;
+}
+
+.preview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 4px var(--orange);
+  height: 500px;
+  width: 500px;
 }
