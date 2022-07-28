@@ -6,6 +6,13 @@ function BorderPreviewer() {
   const [borderThree, setBorderThree] = useState('')
   const [borderFour, setBorderFour] = useState('')
 
+  const style = {
+    borderTopLeftRadius: borderOne + 'px',
+    borderTopRightRadius: borderTwo + 'px',
+    borderBottomLeftRadius: borderThree + 'px',
+    borderBottomRightRadius: borderFour + 'px'
+  }
+
   return (
     <div className='container'>
       <header className='header'>
@@ -19,11 +26,11 @@ function BorderPreviewer() {
             <input className='border-input' type="text" onChange={(event) => setBorderOne(event.target.value)}/>
           </div>
           <div>
-            <p className='group-title'>Bottom left</p>
+            <p className='group-title'>Top right</p>
             <input className='border-input' type="text" onChange={(event) => setBorderTwo(event.target.value)}/>
           </div>
           <div>
-            <p className='group-title'>Top right</p>
+            <p className='group-title'>Bottom left</p>
             <input className='border-input' type="text" onChange={(event) => setBorderThree(event.target.value)}/>
           </div>
           <div>
@@ -32,12 +39,12 @@ function BorderPreviewer() {
           </div>
         </div>
 
-        <div className='preview'>
+        <div className='preview' style={style}>
           <code className='code'>
             <p>.class-example {'{'}</p>
             <p className='p-25'>border-top-left-radius: {borderOne}px;</p>
-            <p className='p-25'>border-bottom-left-radius: {borderTwo}px;</p>
-            <p className='p-25'>border-top-right-radius: {borderThree}px;</p>
+            <p className='p-25'>border-top-right-radius: {borderTwo}px;</p>
+            <p className='p-25'>border-bottom-left-radius: {borderThree}px;</p>
             <p className='p-25'>border-bottom-right-radius: {borderFour}px;</p>
             <p>{'}'}</p>
           </code>
